@@ -33,8 +33,6 @@ public class ContactoFamiliar extends Contacto{
 
     @Override
     public String toString() {
-        return "ContactoFamiliar{" + "\n" +
-                "parentesco='" + parentesco + '\'' + "\n" +
-                "} " + super.toString();
+        return "[CONTACTO FAMILIAR] " + super.toString() + " | Parentesco: " + parentesco;
     }
 }

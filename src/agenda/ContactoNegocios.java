@@ -33,8 +33,6 @@ public class ContactoNegocios extends Contacto{
 
     @Override
     public String toString() {
-        return "ContactoNegocios{" + "\n" +
-                "correoElectronico='" + correoElectronico + '\'' + "\n" +
-                "} " + super.toString();
+        return "[CONTACTO NEGOCIOS] " + super.toString() + " | Correo: " + correoElectronico;
     }
 }

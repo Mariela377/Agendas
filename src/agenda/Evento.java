@@ -1,6 +1,7 @@
 package agenda;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public abstract class Evento extends ElementosAgenda {
     private LocalDate fecha;
@@ -18,11 +19,7 @@ public abstract class Evento extends ElementosAgenda {
 
     @Override
     public String toString() {
-        return "Evento{" +
-                "descripcion='" + descripcion + '\'' +
-                ", fecha=" + fecha +
-                ", contacto=" + contacto +
-                ", evento=" + evento +
-                "} " + super.toString();
+        return "Fecha: " + fecha.format(DateTimeFormatter.ofPattern("dd/MM/yyyy"))
+                + " | Descripción: " + descripcion;
     }
 }

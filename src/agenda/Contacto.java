@@ -50,12 +50,6 @@ public abstract class Contacto extends ElementosAgenda {
 
     @Override
     public String toString() {
-        return "Contacto{" +
-                "cedula=" + cedula +
-                ", laPersona=" + laPersona +
-                ", telefono='" + telefono + '\'' +
-                ", contacto=" + contacto +
-                ", evento=" + evento +
-                "} " + super.toString();
+        return "Cédula: " + cedula + " | " + laPersona + " | Teléfono: " + telefono;
     }
 }
