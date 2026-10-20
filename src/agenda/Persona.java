@@ -40,10 +40,13 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "Persona{" + "\n" +
-                "nombre='" + nombre + '\'' + "\n" +
-                ", edad=" + edad + "\n" +
-                ", genero=" + genero + "\n" +
-                '}';
+        String generoTexto;
+        switch (genero) {
+            case 1:  generoTexto = "Masculino"; break;
+            case 2:  generoTexto = "Femenino";  break;
+            case 3:  generoTexto = "Otro";      break;
+            default: generoTexto = "No indicado";
+        }
+        return "Nombre: " + nombre + " | Edad: " + edad + " | Género: " + generoTexto;
     }
 }
