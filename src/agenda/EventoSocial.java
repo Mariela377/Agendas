@@ -22,9 +22,7 @@ public class EventoSocial extends Evento {
 
     @Override
     public String toString() {
-        return "Social{" +
-                "lugar='" + lugar + '\'' +
-                "} " + super.toString();
+        return "[EVENTO SOCIAL] " + super.toString() + " | Lugar: " + lugar;
     }
 }
 //clases abstractas, metodos abstractos, interface, ect al proyecto,

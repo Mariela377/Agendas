@@ -26,4 +26,10 @@ public class EventoPijamada extends Evento{
     public String converToJSON() {
         return "";
     }
+
+    @Override
+    public String toString() {
+        return "[PIJAMADA] " + super.toString() + " | Lugar: " + lugar
+                + " | Asistentes: " + String.join(", ", asistentes);
+    }
 }

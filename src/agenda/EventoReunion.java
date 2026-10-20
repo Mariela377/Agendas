@@ -22,8 +22,6 @@ public class EventoReunion extends Evento {
 
     @Override
     public String toString() {
-        return "Reunion{" +
-                "countPersonas=" + countPersonas +
-                "} " + super.toString();
+        return "[REUNIÓN] " + super.toString() + " | Personas: " + countPersonas;
     }
 }
