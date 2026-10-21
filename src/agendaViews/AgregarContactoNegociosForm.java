@@ -83,6 +83,7 @@ public class AgregarContactoNegociosForm extends JFrame {
             txtCedula.requestFocus();
             return;
         }
+
         if (!Validaciones.esCorreoValido(correo)) {
             mostrarError("El correo no es válido. Ejemplo: nombre@empresa.com");
             txtCorreo.requestFocus();

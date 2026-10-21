@@ -28,7 +28,21 @@ public class Agenda {
         return null;
     }
 
-//Primero busca el objeto, luego lo remueve de la lista por referencia (no por posición).
+    // ⬇️ MÉTODO NUEVO ⬇️
+    //Igual que buscarContacto, pero compara el teléfono. Si no encuentra nada, devuelve null
+    public Contacto buscarContactoPorTelefono(String telefono) {
+        for (ElementosAgenda elemento : this.listaEventos) {
+            if (elemento instanceof Contacto) {
+                Contacto c = (Contacto) elemento;
+                if (c.getTelefono().equals(telefono))
+                    return c;
+            }
+        }
+        return null;
+    }
+    // ⬆️ HASTA AQUÍ ⬆️
+
+    //Primero busca el objeto, luego lo remueve de la lista por referencia (no por posición).
     public void eliminarContacto(int cedula){
         Contacto c = this.buscarContacto(cedula);
         if (c!= null)
@@ -103,7 +117,7 @@ public class Agenda {
     public String toString() {
         return this.listaEventos.stream()
                 .map(Object::toString)
-                .collect(Collectors.joining("\n"));
+                .collect(Collectors.joining("\n\n"));
     }
 
     /*@Override
