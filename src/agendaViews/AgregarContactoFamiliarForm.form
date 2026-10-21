@@ -5,7 +5,9 @@
     <constraints>
       <xy x="16" y="99" width="509" height="343"/>
     </constraints>
-    <properties/>
+    <properties>
+      <background color="-16071494"/>
+    </properties>
     <border type="none"/>
     <children>
       <component id="8b714" class="javax.swing.JLabel">
@@ -15,6 +17,9 @@
           </grid>
         </constraints>
         <properties>
+          <background color="-16748174"/>
+          <font name="Stencil" size="24" style="3"/>
+          <foreground color="-7"/>
           <text value="Nombre:"/>
         </properties>
       </component>
@@ -31,6 +36,9 @@
           <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <background color="-16748174"/>
+          <font name="Stencil" size="24" style="3"/>
+          <foreground color="-7"/>
           <text value="Género:"/>
         </properties>
       </component>
@@ -39,6 +47,9 @@
           <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <background color="-16748174"/>
+          <font name="Stencil" size="24" style="3"/>
+          <foreground color="-7"/>
           <text value="Teléfono (8888-8888):"/>
         </properties>
       </component>
@@ -47,6 +58,9 @@
           <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <background color="-16748174"/>
+          <font name="Stencil" size="24" style="3"/>
+          <foreground color="-7"/>
           <text value="Cédula (9 dígitos):"/>
         </properties>
       </component>
@@ -55,6 +69,9 @@
           <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <background color="-16748174"/>
+          <font name="Stencil" size="24" style="3"/>
+          <foreground color="-7"/>
           <text value="Parentesco:"/>
         </properties>
       </component>
@@ -87,6 +104,9 @@
           <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <background color="-16748174"/>
+          <font name="Stencil" size="24" style="3"/>
+          <foreground color="-7"/>
           <text value="Edad:"/>
         </properties>
       </component>
@@ -107,6 +127,9 @@
           <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <background color="-6610401"/>
+          <font name="Berlin Sans FB Demi" size="20" style="1"/>
+          <foreground color="-7"/>
           <text value="Cancelar"/>
         </properties>
       </component>
@@ -115,6 +138,9 @@
           <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <background color="-13984984"/>
+          <font name="Berlin Sans FB Demi" size="20" style="1"/>
+          <foreground color="-7"/>
           <text value="Guardar"/>
         </properties>
       </component>

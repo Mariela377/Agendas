@@ -36,6 +36,7 @@ public class AgregarContactoFamiliarForm extends JFrame {
         // Si querés colores por código, van aquí (antes del pack)
 
         this.pack();
+        this.setSize(600, 400);
         this.setLocationRelativeTo(null);
 
         btnGuardar.addActionListener(new ActionListener() {

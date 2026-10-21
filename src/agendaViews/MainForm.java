@@ -11,6 +11,9 @@ public class MainForm extends JFrame{
     private JPanel panel1;
     private JButton BTAgregar;
     private JButton BTMostrar;
+    private JButton BTConNegocio;
+    private JButton BTEvSocial;
+    private JButton BTEvReunion;
 
     public MainForm(Agenda laAgenda) throws HeadlessException {
         this.setContentPane(panel1);
@@ -25,6 +28,18 @@ public class MainForm extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 (new MostrarAgendaForm(laAgenda)).setVisible(true);
+            }
+        });
+        BTAgregar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                (new AgregarContactoFamiliarForm(laAgenda)).setVisible(true);
+            }
+        });
+        BTConNegocio.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                (new AgregarContactoNegociosForm(laAgenda)).setVisible(true);
             }
         });
     }
