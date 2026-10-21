@@ -79,6 +79,12 @@ public class AgregarContactoFamiliarForm extends JFrame {
             txtTelefono.requestFocus();
             return;
         }
+        if (laAgenda.buscarContactoPorTelefono(telefono) != null) {
+            mostrarError("El teléfono " + telefono + " ya pertenece a "
+                    + laAgenda.buscarContactoPorTelefono(telefono).getLaPersona().getNombre() + ".");
+            txtTelefono.requestFocus();
+            return;
+        }
         if (!Validaciones.esCedulaValida(textoCedula)) {
             mostrarError("La cédula debe tener exactamente 9 dígitos (sin guiones).");
             txtCedula.requestFocus();
