@@ -42,5 +42,18 @@ public class MainForm extends JFrame{
                 (new AgregarContactoNegociosForm(laAgenda)).setVisible(true);
             }
         });
+        BTEvSocial.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                (new AgregarEventoSocialForm(laAgenda)).setVisible(true);
+            }
+        });
+
+        BTEvReunion.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                (new AgregarEventoReunionForm(laAgenda)).setVisible(true);
+            }
+        });
     }
 }
